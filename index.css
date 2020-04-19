@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 101;
+  background: #FFF;
+}
+.header_main {
+  width: 1140px;
+  height: 100px;
+  margin: auto;
+}
+.header_main .logo {
+  margin: 30px 0 50px 0;
+}
+.header_main .logout,
+.header_main .icons {
+  float: right;
+  margin: 30px 0;
+}
+.header_main .icons .icon-shezhi,
+.header_main .icons .icon-xiaoxi {
+  font-size: 18px !important;
+  line-height: 40px;
+  margin-right: 24px;
+}
+
+.content {
+  width: 100%;
+  background: #F5F8F9;
+}
+.content_main {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 170px 0 53px 0;
+}
+.content_main .head {
+  height: 100px;
+}
+.content_main .head .title {
+  font-family: "Raleway-Regular";
+  font-size: 30px;
+  color: #262B2E;
+}
+.content_main .head .identification {
+  font-family: "OpenSans";
+  font-size: 15px;
+  color: #262B2E;
+  opacity: 0.7;
+}
+.content_main .head .nav_bar {
+  position: relative;
+  float: right;
+  height: 42px;
+}
+.content_main .head .nav_bar ul {
+  height: 20px;
+  margin-top: 22px;
+  font-family: "OpenSans-Bold";
+  font-size: 13px;
+  line-height: 20px;
+  color: #262B2E;
+  list-style: none;
+}
+.content_main .head .nav_bar ul li {
+  float: left;
+  margin: 0 0 0 30px;
+  cursor: pointer;
+}
+.content_main .head .nav_bar .under_block {
+  position: absolute;
+  bottom: -5px;
+  left: 30px;
+  width: 82px;
+  height: 2px;
+  background: #CCCFD0;
+  transition: .8s all;
+}
+.content_main .carousel {
+  width: 560px;
+  height: 290px;
+  box-sizing: border-box;
+  margin: 0 20px 20px 0;
+  padding: 10px 0;
+  background: #FFF;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.content_main .carousel .img_list {
+  width: 3920px;
+  height: 270px;
+  position: absolute;
+  left: -560px;
+}
+.content_main .carousel .img_list img {
+  float: left;
+  margin: 0 10px;
+}
+.content_main .carousel .point_list {
+  position: absolute;
+  height: 15px;
+  width: 75px;
+  z-index: 2;
+  bottom: 15px;
+  left: 242px;
+}
+.content_main .carousel .point_list div {
+  cursor: pointer;
+  float: left;
+  width: 10px;
+  height: 10px;
+  background: #C0C2C5;
+  margin-right: 5px;
+}
+.content_main .carousel .point_list div.active {
+  height: 15px;
+  background: #FFF;
+  transform: translateY(-5px);
+}
+.content_main .carousel .arrow {
+  position: absolute;
+  top: 125px;
+  z-index: 2;
+  font-size: 40px !important;
+  color: #FCFCFC;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  visibility: hidden;
+}
+.content_main .carousel:hover .arrow {
+  visibility: visible;
+}
+.content_main .carousel .arrow:hover {
+  color: #FFF;
+  background-color: RGBA(0, 0, 0, 0.4);
+}
+.content_main .carousel .icon-prev {
+  left: 10px;
+}
+.content_main .carousel .icon-next {
+  right: 10px;
+}
+.content_main .card {
+  float: right;
+  width: 560px;
+  height: 290px;
+  margin-bottom: 20px;
+  background: #FFF;
+}
+.content_main .card .top {
+  height: 110px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #EFEFF0;
+  padding: 40px 50px 0 50px;
+}
+.content_main .card .top .title {
+  font-family: "OpenSans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #262B2E;
+}
+.content_main .card .top .view_all {
+  float: right;
+  width: 95px;
+  height: 40px;
+  font-family: "OpenSans-Semibold";
+  font-size: 13px;
+  line-height: 40px;
+  vertical-align: middle;
+  color: #262B2E;
+  border: 1px solid #E9E9EA;
+  background-color: #FFF;
+}
+.content_main .card .info {
+  padding: 30px 50px 0 50px;
+}
+.content_main .card .info .info_head {
+  height: 50px;
+  font-family: "OpenSans-Bold";
+  font-size: 14px;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding-bottom: 36px;
+  color: #262B2E;
+}
+.content_main .card .info .info_head div {
+  float: left;
+}
+.content_main .card .info .info_head .time {
+  width: 100px;
+}
+.content_main .card .info .info_head .username {
+  width: 295px;
+}
+.content_main .card .info ul li .status{
+  width: 65px;
+}
+.content_main .card .info ul {
+  list-style: none;
+}
+.content_main .card .info ul li {
+  height: 50px;
+  font-family: "OpenSans";
+  font-size: 13px;
+  box-sizing: border-box;
+  padding-bottom: 37px;
+  color: #262B2E;
+}
+.content_main .card .info ul li div {
+  float: left;
+}
+.content_main .card .info ul li .time {
+  width: 100px;
+}
+.content_main .card .info ul li .username {
+  width: 295px;
+}
+.content_main .card .info ul li .status{
+  width: 65px;
+  height: 30px;
+  background: #5DD054;
+  font-family: "OpenSans-Bold";
+  font-size: 13px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFF;
+}
+.content_main .line {
+  width: 1140px;
+  height: 349px;
+  margin-bottom: 20px;
+  background: #FFF;
+}
+.content_main .pie {
+  width: 560px;
+  height: 377px;
+  box-sizing: border-box;
+  margin-right: 20px;
+  background: #FFF;
+}
+.content_main .bar {
+  float: right;
+  width: 560px;
+  height: 377px;
+  background: #FFF;
+}
+
+.footer {
+  width: 100%;
+  background: #202124;
+}
+.footer_main {
+  width: 1140px;
+  height: 253px;
+  box-sizing: border-box;
+  margin: auto;
+  padding-top: 80px;
+}
+.footer_main .logo {
+  float: left;
+  margin-right: 77px;
+}
+.footer_main ul {
+  float: left;
+  margin-right: 120px;
+  list-style: none;
+  font-family: "Raleway-Bold";
+  font-size: 13px;
+  line-height: 28px;
+  color: #FFF;
+}
+
+.end {
+  width: 100%;
+  height: 37px;
+  background: #1C1D20;
+}
